@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Print Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="neon-background" aria-hidden="true">
+        <div class="neon-background__glow"></div>
+        <div class="neon-frame"></div>
+        <div class="neon-line neon-line--one"></div>
+        <div class="neon-line neon-line--two"></div>
+    </div>
+    <header class="hero">
+        <div class="glow-frame"></div>
+        <div class="hero__content">
+            <h1>Neon Print Lab</h1>
+            <p class="hero__subtitle">Будущее 3D-печати в ваших руках</p>
+            <a href="#order" class="btn btn--primary">Сделать заказ</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section section--about" id="about">
+            <div class="section__inner">
+                <h2>Кто мы</h2>
+                <p>
+                    Neon Print Lab — команда инженеров и дизайнеров, которые создают уникальные изделия с помощью
+                    передовых 3D-принтеров. Мы объединяем точность технологий и смелость футуристичного дизайна,
+                    чтобы ваши идеи воплощались в реальность с неоновым блеском.
+                </p>
+                <p>
+                    Мы работаем с PLA, PETG, ABS и фотополимерными смолами, подбирая оптимальный материал для каждой
+                    задачи — от прототипов до готовых продуктов и сувениров.
+                </p>
+            </div>
+        </section>
+
+        <section class="section section--order" id="order">
+            <div class="section__inner">
+                <h2>Как заказать</h2>
+                <div class="order-grid">
+                    <div class="order-card">
+                        <h3>1. Свяжитесь с нами</h3>
+                        <p>Опишите задачу, пришлите чертежи или просто поделитесь идеей. Мы поможем сформулировать техническое задание.</p>
+                        <div class="order-links">
+                            <a href="#" class="btn btn--outline">Телеграм-канал</a>
+                            <a href="#" class="btn btn--outline">WhatsApp-группа</a>
+                        </div>
+                    </div>
+                    <div class="order-card">
+                        <h3>2. Подтверждение заказа</h3>
+                        <p>Мы подготовим 3D-модель, расчёт стоимости и сроки изготовления. После утверждения приступаем к печати.</p>
+                    </div>
+                    <div class="order-card">
+                        <h3>3. Получение изделия</h3>
+                        <p>Отправим заказ курьером или заберите в нашей мастерской. Возможна упаковка в подарочный футуристичный кейс.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--products" id="products">
+            <div class="section__inner">
+                <h2>Наши изделия</h2>
+                <p class="section__lead">От декоративных светильников до функциональных деталей — каждое изделие проходит ручную пост-обработку для идеального вида.</p>
+                <div class="product-grid">
+                    <figure class="product-card">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Неоновая лампа">
+                        <figcaption>Световые арт-объекты</figcaption>
+                    </figure>
+                    <figure class="product-card">
+                        <img src="https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=800&q=80" alt="3D-печатный прототип">
+                        <figcaption>Прототипы и корпуса устройств</figcaption>
+                    </figure>
+                    <figure class="product-card">
+                        <img src="https://images.unsplash.com/photo-1503389152951-9f343605f61e?auto=format&fit=crop&w=800&q=80" alt="Дизайнерская ваза">
+                        <figcaption>Дизайнерский декор</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--printers" id="printers">
+            <div class="section__inner">
+                <h2>Наш парк 3D-принтеров</h2>
+                <div class="printers-grid">
+                    <div class="printers-card">
+                        <h3>Formlabs Form 3L</h3>
+                        <p>Инженерная точность SLA-печати с невероятной детализацией и материалами для ювелирных задач.</p>
+                    </div>
+                    <div class="printers-card">
+                        <h3>Prusa MK4</h3>
+                        <p>Надёжный FDM-принтер для серийной печати деталей из ABS, PETG и композитов.</p>
+                    </div>
+                    <div class="printers-card">
+                        <h3>Raise3D Pro3 Plus</h3>
+                        <p>Большой объём печати и закрытая камера для промышленного качества и стабильности.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--cta" id="why-us">
+            <div class="section__inner">
+                <h2>Почему выбирают нас</h2>
+                <ul class="cta-list">
+                    <li><span>✔</span> Консультации и сопровождение на каждом этапе — от идеи до готового изделия.</li>
+                    <li><span>✔</span> Премиальные материалы и пост-обработка для безупречного вида.</li>
+                    <li><span>✔</span> Чёткие сроки, прозрачные сметы и гарантия качества.</li>
+                    <li><span>✔</span> Футуристичный стиль, который выделит ваш проект среди других.</li>
+                </ul>
+                <a href="#order" class="btn btn--primary">Получить расчёт</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="section__inner footer__content">
+            <p>© 2024 Neon Print Lab. 3D-печать с сиянием будущего.</p>
+            <p>Адрес мастерской: ул. Техно-парковая, 12 · Телефон: +7 (999) 123-45-67</p>
+        </div>
+    </footer>
+</body>
+</html>
